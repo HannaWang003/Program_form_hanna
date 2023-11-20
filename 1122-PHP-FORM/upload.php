@@ -16,22 +16,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>檔案上傳</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
     <h1 class="header">檔案上傳練習</h1>
     <!----建立你的表單及設定編碼----->
-    <form action="./api/upload.php" method="post">
-        <input type="file" name="" id="">
+    <?php
+if($_GET['error']){
+    echo $_GET['error'];
+}
+
+?>
+    <form action="./api/upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="img" id="">
+        <input type="text" name="test" id="">
+        <input type="submit" value="上傳">
     </form>
 
 
 
 
-
     <!----建立一個連結來查看上傳後的圖檔---->
+    <?php
+if($_GET['img']){
+    echo "<img src='./imgs/{$_GET['img']}' style='width:250px;height:150px'>";
+}
 
+?>
 
 </body>
 
