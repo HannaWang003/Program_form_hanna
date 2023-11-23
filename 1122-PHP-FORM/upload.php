@@ -32,7 +32,7 @@
     ?>
     <form action="./api/upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="img" id="">
-        <input type="text" name="test" id="">
+        <input type="text" name="desc" id="" value="檔案" placeholder="請輸入檔案描述">
         <input type="submit" value="上傳">
     </form>
 
