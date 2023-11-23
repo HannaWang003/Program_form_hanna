@@ -19,8 +19,7 @@ include("./db.php");
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>檔案管理功能</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script> -->
@@ -86,24 +85,22 @@ include("./db.php");
                 // echo $imgname;
                 // exit();
             ?>
-            <tr>
-                <td><?= $file['id'] ?></td>
-                <!-- <td><img class="thums" src="<?= $imgname ?>" alt="<?= $file['name'] ?>" style="width:100px;height:100px"> -->
-                <td><img class="thums" src="<?= $imgname ?>" alt="<?= $file['name'] ?>">
-                </td>
-                <td><?= $file['type'] ?></td>
-                <td><?= $file['size'] ?></td>
-                <td><?= $file['desc'] ?></td>
-                <td><?= $file['create_at'] ?></td>
-                <td>
-                    <!-- <button class="btn btn-info">編輯</button> -->
-                    <!-- <button class="btn btn-danger"><a href="./api/del_file.php?id=<?= $file['id'] ?>">刪除</a></button> -->
-                    <button class="btn btn-info"><a
-                            onclick="location.href='edit_file.php?id=<?= $file['id'] ?>'">編輯</a></button>
-                    <button class="btn btn-danger"><a
-                            onclick="location.href='./api/del_file.php?id=<?= $file['id'] ?>'">刪除</a></button>
-                </td>
-            </tr>
+                <tr>
+                    <td><?= $file['id'] ?></td>
+                    <!-- <td><img class="thums" src="<?= $imgname ?>" alt="<?= $file['name'] ?>" style="width:100px;height:100px"> -->
+                    <td><img class="thums" src="<?= $imgname ?>" alt="<?= $file['name'] ?>">
+                    </td>
+                    <td><?= $file['type'] ?></td>
+                    <td><?= $file['size'] ?></td>
+                    <td><?= $file['desc'] ?></td>
+                    <td><?= $file['create_at'] ?></td>
+                    <td>
+                        <!-- <button class="btn btn-info">編輯</button> -->
+                        <!-- <button class="btn btn-danger"><a href="./api/del_file.php?id=<?= $file['id'] ?>">刪除</a></button> -->
+                        <button class="btn btn-info"><a onclick="location.href='edit_file.php?id=<?= $file['id'] ?>'">編輯</a></button>
+                        <button class="btn btn-danger"><a onclick="location.href='./api/del_file.php?id=<?= $file['id'] ?>'">刪除</a></button>
+                    </td>
+                </tr>
             <?php
             }
             ?>
