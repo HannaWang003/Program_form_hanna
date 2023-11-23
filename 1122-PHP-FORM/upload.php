@@ -1,4 +1,5 @@
 <?php
+
 /**
  * 1.建立表單
  * 2.建立處理檔案程式
@@ -24,11 +25,11 @@
     <h1 class="header">檔案上傳練習</h1>
     <!----建立你的表單及設定編碼----->
     <?php
-if($_GET['error']){
-    echo $_GET['error'];
-}
+    if (isset($_GET['error'])) {
+        echo $_GET['error'];
+    }
 
-?>
+    ?>
     <form action="./api/upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="img" id="">
         <input type="text" name="test" id="">
@@ -40,11 +41,11 @@ if($_GET['error']){
 
     <!----建立一個連結來查看上傳後的圖檔---->
     <?php
-if($_GET['img']){
-    echo "<img src='./imgs/{$_GET['img']}' style='width:250px;height:150px'>";
-}
+    if (isset($_GET['img'])) {
+        echo "<img src='./imgs/{$_GET['img']}' style='width:250px;height:150px'>";
+    }
 
-?>
+    ?>
 
 </body>
 
