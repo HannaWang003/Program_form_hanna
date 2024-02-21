@@ -13,6 +13,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,21 +21,27 @@
     <title>文字檔案匯入</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1 class="header">圖形處理練習</h1>
-<!---建立檔案上傳機制--->
+    <h1 class="header">圖形處理練習</h1>
+    <!---建立檔案上傳機制--->
+    <form action="?" method='post'>
+        <label for="">選擇檔案</label>
+        <input type="file" name="img" id="">
+        <input type="submit" value='上傳'>
+    </form>
 
 
-
-<!----縮放圖形----->
-
-
-<!----圖形加邊框----->
+    <!----縮放圖形----->
 
 
-<!----產生圖形驗證碼----->
+    <!----圖形加邊框----->
+
+
+    <!----產生圖形驗證碼----->
 
 
 
 </body>
+
 </html>
