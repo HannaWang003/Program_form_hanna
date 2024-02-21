@@ -1,4 +1,5 @@
 <?php
+
 /****
  * 1.建立資料庫及資料表
  * 2.建立上傳圖案機制
@@ -9,7 +10,9 @@
  *   ->圖形驗證碼
  * 5.輸出檔案
  */
-
+if (!empty($_FILES['img']['tmp_name'])) {
+    move_uploaded_file($_FILES['img']['tmp_name'], "./imgs/{$_FILES['img']['tmp_name']}");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
