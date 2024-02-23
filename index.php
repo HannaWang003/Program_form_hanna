@@ -28,6 +28,9 @@
     <a href="filelist.php">
         <div class="types">圖形處理 - 瀏覽資料夾</div>
     </a>
+    <a href="catpcha.php">
+        <div class="types">圖形處理 - 圖形驗證碼</div>
+    </a>
 </body>
 
 </html>
