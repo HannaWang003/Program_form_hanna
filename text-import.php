@@ -1,4 +1,20 @@
+<style>
+    tr:nth-child(1) {
+        background: #333;
+        color: #fff;
+    }
+
+    td {
+        border: 1px solid #666;
+        padding: 5px 12px;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+</style>
 <?php
+
 /****
  * 1.建立資料庫及資料表
  * 2.建立上傳檔案機制
@@ -8,10 +24,31 @@
  * 6.寫入資料庫
  * 7.結束檔案
  */
-
+if (!empty($_FILES['text']['tmp_name'])) {
+    $filename = $_FILES['text']['name'];
+    $filesize = $_FILES['text']['size'];
+    $file = fopen($_FILES['text']['tmp_name'], 'r');
+    echo "檔案上傳成功!檔名為:" . $filename;
+    echo "<br>檔案大小:" . $filesize;
+    echo "<br>";
+    //使用table
+    echo "<table>";
+    while (!feof($file)) {
+        $line = fgets($file);
+        $cols = explode(",", $line);
+        echo "<tr>";
+        foreach ($cols as $val) {
+            echo "<td>";
+            echo $val;
+            echo "</td>";
+        }
+        echo "</tr>";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,15 +56,20 @@
     <title>文字檔案匯入</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1 class="header">文字檔案匯入練習</h1>
-<!---建立檔案上傳機制--->
+    <h1 class="header">文字檔案匯入練習</h1>
+    <!---建立檔案上傳機制--->
+    <form action="?" method="post" enctype="multipart/form-data">
+        <input type="file" name="text">
+        <input type="submit" value="上傳">
+    </form>
 
 
-
-<!----讀出匯入完成的資料----->
+    <!----讀出匯入完成的資料----->
 
 
 
 </body>
+
 </html>
