@@ -34,6 +34,9 @@
     <a href="text-export.php">
         <div class="types" style="height:auto;min-height:100px;">圖形處理 - CVS匯入db並讀取</div>
     </a>
+    <a href="pdf-export.php">
+        <div class="types">檔案處理 - PDF輸出</div>
+    </a>
     <a href="catpcha.php">
         <div class="types">圖形處理 - 圖形驗證碼</div>
     </a>
