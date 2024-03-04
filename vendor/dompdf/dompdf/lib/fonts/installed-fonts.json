@@ -1,0 +1,14 @@
+{
+    "goudysto": {
+        "normal": "E:\\program\\Hanna-112-PHP-FORM\\vendor\\dompdf\\dompdf\/lib\/fonts\/GOUDYSTO",
+        "bold": "E:\\program\\Hanna-112-PHP-FORM\\vendor\\dompdf\\dompdf\/lib\/fonts\/GOUDYSTO",
+        "italic": "E:\\program\\Hanna-112-PHP-FORM\\vendor\\dompdf\\dompdf\/lib\/fonts\/GOUDYSTO",
+        "bold_italic": "E:\\program\\Hanna-112-PHP-FORM\\vendor\\dompdf\\dompdf\/lib\/fonts\/GOUDYSTO"
+    },
+    "kaiu": {
+        "normal": "E:\\program\\Hanna-112-PHP-FORM\\vendor\\dompdf\\dompdf\/lib\/fonts\/kaiu",
+        "bold": "E:\\program\\Hanna-112-PHP-FORM\\vendor\\dompdf\\dompdf\/lib\/fonts\/kaiu",
+        "italic": "E:\\program\\Hanna-112-PHP-FORM\\vendor\\dompdf\\dompdf\/lib\/fonts\/kaiu",
+        "bold_italic": "E:\\program\\Hanna-112-PHP-FORM\\vendor\\dompdf\\dompdf\/lib\/fonts\/kaiu"
+    }
+}
